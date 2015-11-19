@@ -10,8 +10,7 @@ def index():
 
 @app.route('/<name>')
 def index_name(name):
-    return 'hey {}'.format(name)
+    return 'hey {}, how are you?'.format(name)
 
 if __name__ == '__main__':
-	app.debug = True
     app.run()
